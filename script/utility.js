@@ -12,13 +12,17 @@ function setBackGroundColor(elementId){
   const elementBgcolor = document.getElementById(elementId);
   elementBgcolor.classList.add('bg-orange-400');
 }
-
+// remove background color
+function removeBgColorById(elementId){
+  const elementBgcolor =document.getElementById(elementId);
+  elementBgcolor.classList.remove('bg-orange-400');
+}
 
 // get a random alphabet
 function randomAlphabet() {
   const alphabets = "abcdefghijklmnopqrstuvwxyz";
   const singleAlphabet = alphabets.split("");
-  console.log(singleAlphabet);
+ 
 
   const randomAlphabet = Math.random() * 25;
   const alphabetIndex = Math.round(randomAlphabet);
